@@ -64,3 +64,8 @@ p {
       overflow: visible;
       height: 35px;
   }
+
+  .overflow-scroll {
+      overflow: scroll;
+      height: 35px
+  }
