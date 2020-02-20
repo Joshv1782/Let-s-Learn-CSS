@@ -1,6 +1,7 @@
 [role="presentation"] {
     width: 500px;
-    height: 432;
+    height: 432px;
+    background: gray;
 
     margin-top: 64px;
     margin-right: auto;
@@ -12,9 +13,9 @@
     padding-bottom: 32px;
     padding-left: 32px;
 
-    border-top: 16px solid red;
-    border-right: 16px solid yellow;
-    border-bottom: 16px solid green;
-    border-left: 16px solid blue;
+    border-top: 64px solid red;
+    border-right: 64px solid yellow;
+    border-bottom: 64px solid green;
+    border-left: 64px solid blue;
 
 }
