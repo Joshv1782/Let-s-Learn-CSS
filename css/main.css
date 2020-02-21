@@ -1,13 +1,28 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+}
+
+body {
+    background-image: url("../img/mountain\ pic.jpg");
+    background-size: cover; /* Cover the whole element. */
+    background-repeat: no-repeat; /*Show one of the image, instead of unlimited titles. */
+}
 h1 {
     font-family: "times New Roman", Georgia, 'Times New Roman', Times, serif;
     text-align: center;
+    padding top: ;
 }
 
 nav {
     width: auto;
     max-width: 500px;
     background-color: salmon;
-    margin: 16px auto;
+    margin: 0px auto;
+    position: sticky;
+    top: 50px;
 }
 
 nav ul {
@@ -20,7 +35,14 @@ nav ul li {
 }
 
 nav ul li a {
-    text-decoration: none;
+    text-decoration: none; /* Disable the underline! */
+    display: inline-block;
+    padding: 16px 32px;
+}
+
+nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
+    background-color: rgb( 50, 50, 50 );
+    color: #fff;
 }
 
 article {
