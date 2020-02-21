@@ -9,6 +9,8 @@ body {
     background-image: url("../img/mountain\ pic.jpg");
     background-size: cover; /* Cover the whole element. */
     background-repeat: no-repeat; /*Show one of the image, instead of unlimited titles. */
+    background-position: center; /* Can also be co-ordinates like: 50px  75px */
+    background-attachment: fixed;
 }
 h1 {
     font-family: "times New Roman", Georgia, 'Times New Roman', Times, serif;
@@ -59,6 +61,10 @@ p {
     line-height: 1.5;
     color: rgb( 33, 33, 33 ); /* There are a few ways to do color... */
     background-color: #eeeeee;
+}
+
+#float-practice {
+    float: left;   /* moves the picture horizontally on its line */
 }
 
 /* Text meant only for screen readers. */
