@@ -1,10 +1,37 @@
-* {
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url( '../fonts/jetbrains-mono/JetBrainsMono-Regular.ttf');
+    src: url( '../fonts/jetbrains-mono/JetBrainsMono-Regular.ttf') format( 'truetype' );
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url( '../fonts/jetbrains-mono/JetBrainsMono-Bold.ttf.ttf');
+    src: url( '../fonts/jetbrains-mono/JetBrainsMono-Regular.ttf') format( 'truetype' );
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url( '../fonts/jetbrains-mono/JetBrainsMono-Bold-Italic.ttf.ttf');
+    src: url( '../fonts/jetbrains-mono/JetBrainsMono-Regular.ttf') format( 'truetype' );
+    font-weight: bold;
+    font-style: italic;
+}
+* { /* Basic browser reset */
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
     font-size: 16px;
 }
 
+code {
+    white-space: pre;
+    font-family: 'JetBrains', Consolas, monospace;
+}
 body {
     background-image: url("../img/mountain\ pic.jpg");
     background-size: cover; /* Cover the whole element. */
@@ -141,12 +168,21 @@ p {
   }
 
   #background-bullets li {
-    background-image: url( '../img'); /*image url*/
+    background-image: url( '../img/coin-stack.svg'); /*image url*/
     background-repeat: no-repeat;
     background-size: 32px;
     background-position: top left;
     padding: 8px 8px 8px 64px;
   }
-  #image-bullets {
-
+/* Only do this if the image is important to the conent! */
+  #image-bullets li {
+    position: relative;
+  }
+  
+  #image-bullets li img {
+      position: absolute;
+      width: 0px;
+      left: 0px;
+      width: 32px;
+      height: 32px;
   }
