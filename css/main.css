@@ -94,7 +94,7 @@ p {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 15px;
     line-height: 1.5;
-    color: rgb( 33, 33, 33 ); /* There are a few ways to do color... */
+    color: rgb(63, 65, 216); /* There are a few ways to do color... */
     background-color: #eeeeee;
 }
 
@@ -299,3 +299,36 @@ p {
       border: 6px dotted indigo;
   }
 
+  /* Transform / hover eample: */
+
+  .transition-transform div {
+      display: inline-block;
+      padding: 8px 16px;
+      background-color: chartreuse;
+      cursor: pointer;
+      transition: 1s ease transform;
+  }
+
+  .transition-transform div + div { /* Find a div BESDIE a div... 
+    this is a "directly-followed-by" sibling selector. */
+      background-color: green;
+      pointer-events: none;
+  }
+
+  .transition-transform div:hover + div { /* Now we're combining our pseudo (state) selector for hover,
+    and telling the FOLLOWING div how to behave! */
+    transform: 
+        translate( 100px, -50px ) /* move based on X and Y coordinates. */
+        rotate( 35deg ) /* Rotation in degrees */
+        scale( 2 ); /* Resize the element (1=100%; 0=0%; 2=200%; etc.) */
+        pointer-events: none;
+  }
+
+  footer h2 {
+      text-align: center;
+  }
+
+  #social-media- links {
+      list-style: none;
+      text-align: center;
+  }
