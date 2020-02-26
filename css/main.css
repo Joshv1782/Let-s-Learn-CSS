@@ -24,6 +24,22 @@
     font-weight: bold;
     font-style: italic;
 }
+
+@keyframes my-animation {
+    0% { /* we get to define at which point in an animation changes occur! */
+        transform: scale( 1 ); /* What should change at this point in the animation */
+    }
+    50% {
+        transform: scale( 1.2 );
+    }
+    75% {
+        transform: scale( 1.5 );
+    }
+    100% {
+        transform: scale( 1 );
+    }
+}
+
 * { /* Basic browser reset */
     box-sizing: border-box;
     margin: 0px;
@@ -299,6 +315,17 @@ p {
       border: 6px dotted indigo;
   }
 
+  .transition-transform button:nth-child(2) { /* css tricks website */
+      color: lightblue;
+      background-color: black;
+  }
+
+  .transition-transform button:nth-child(3) {
+      color: lightpink;
+    background-color: darkgoldenrod;
+}
+
+
   /* Transform / hover eample: */
 
   .transition-transform div {
@@ -322,6 +349,22 @@ p {
         rotate( 35deg ) /* Rotation in degrees */
         scale( 2 ); /* Resize the element (1=100%; 0=0%; 2=200%; etc.) */
         pointer-events: none;
+  }
+
+  /* Ketframe testing */
+
+  #keyframe-test {
+      width: 300px;
+      height: 300px;
+      background-color: firebrick;
+      margin: 64px;
+      /* Let's animate */
+      animation-name: my-animation; /* call it by name! */
+      animation-duration: 2s; /* How long should the animation be? */
+      animation-iteration-count: infinite; /* How many times can this happen? Can be a number */
+      animation-direction: normal; /* can also be alternate or reverse! */
+      animation-timing-function: linear;
+
   }
 
   footer h2 {
