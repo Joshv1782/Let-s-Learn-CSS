@@ -235,3 +235,29 @@ p {
     right: 0;
   }
 
+  .video-section {
+      position: relative;
+      overflow: hidden;
+  }
+
+  .video-section > * {
+      position: relative;
+      z-index: 3;
+  }
+
+  .video-section p {
+      background: none;
+  }
+
+  .video-section video {
+      position: absolute;
+      /* top: 0; */
+      right: 0;
+      bottom: 0;
+      /* left: 0; */
+      width: 150%;
+      height: auto;
+      z-index: 1;
+
+  }
+
